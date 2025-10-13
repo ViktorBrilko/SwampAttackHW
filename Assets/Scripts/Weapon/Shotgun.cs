@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Pistol : Weapon
+public class Shotgun : Weapon
 {
     private void Update()
     {
@@ -9,8 +9,10 @@ public class Pistol : Weapon
 
     public override void Shoot(Transform shootPoint)
     {
+        Debug.Log("1");
         if (_lastShootTime >= _delay)
         {
+            Debug.Log("2");
             Instantiate(Bullet, shootPoint.position, Quaternion.identity);
             _lastShootTime = 0;
         }

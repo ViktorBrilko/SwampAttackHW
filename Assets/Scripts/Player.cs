@@ -10,14 +10,14 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform _shootPoint;
 
     private Weapon _currentWeapon;
-    private int _currentWeaponNumber = 0;
+    private int _currentWeaponNumber;
     private int _currentHealth;
     private Animator _animator;
 
     public int Money { get; private set; }
 
     public event UnityAction<int, int> HealthChanged;
-    
+
     private void Start()
     {
         ChangeWeapon(_weapons[_currentWeaponNumber]);
@@ -61,7 +61,7 @@ public class Player : MonoBehaviour
             _currentWeaponNumber = 0;
         else
             _currentWeaponNumber++;
-        
+
         ChangeWeapon(_weapons[_currentWeaponNumber]);
     }
 
@@ -71,7 +71,7 @@ public class Player : MonoBehaviour
             _currentWeaponNumber = _weapons.Count - 1;
         else
             _currentWeaponNumber--;
-        
+
         ChangeWeapon(_weapons[_currentWeaponNumber]);
     }
 

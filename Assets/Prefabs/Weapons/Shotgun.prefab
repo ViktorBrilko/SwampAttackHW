@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3939850484795832185}
-  - component: {fileID: 2412028117280336195}
   - component: {fileID: 5837867678531955935}
+  - component: {fileID: 5704374845374979633}
   m_Layer: 0
   m_Name: Shotgun
   m_TagString: Untagged
@@ -28,28 +28,11 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.64, y: 0.64, z: 0.64}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2412028117280336195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963438350090080989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5337a6950980e4c4d868971e4a540f3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _label: "\u0414\u0440\u043E\u0431\u043E\u0432\u0438\u043A"
-  _price: 0
-  _icon: {fileID: 21300000, guid: a8eff05b4f942064cb43f8371d6e1677, type: 3}
-  _isBuyed: 0
-  Bullet: {fileID: 5465444841670568317, guid: b474dd90e7551a44faa482ee2dbc4470, type: 3}
 --- !u!212 &5837867678531955935
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -102,3 +85,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5704374845374979633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963438350090080989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 700da37636e86684b8cc3421290c958c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _label: "\u0414\u0440\u043E\u0431\u043E\u0432\u0438\u043A"
+  _price: 10
+  _icon: {fileID: 21300000, guid: 91c2cdc50a9254441a87d44de8453103, type: 3}
+  _isBuyed: 1
+  Bullet: {fileID: 2758252886469485191, guid: c0118d19cef91324b90a834b6dd40b54, type: 3}
+  _delay: 1

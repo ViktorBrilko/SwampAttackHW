@@ -50,6 +50,7 @@ MonoBehaviour:
   _icon: {fileID: 21300000, guid: a8eff05b4f942064cb43f8371d6e1677, type: 3}
   _isBuyed: 0
   Bullet: {fileID: 5465444841670568317, guid: b474dd90e7551a44faa482ee2dbc4470, type: 3}
+  _delay: 0.3
 --- !u!212 &5837867678531955935
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -90,7 +91,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: a8eff05b4f942064cb43f8371d6e1677, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
