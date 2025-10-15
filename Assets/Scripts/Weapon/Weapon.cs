@@ -8,6 +8,7 @@ public abstract class Weapon : MonoBehaviour
     [SerializeField] private bool _isBuyed;
     [SerializeField] protected Bullet Bullet;
     [SerializeField] protected float _delay;
+    [SerializeField] protected GameObject _weaponPrefab;
 
     protected float _lastShootTime;
     
@@ -15,6 +16,7 @@ public abstract class Weapon : MonoBehaviour
     public int Price => _price;
     public Sprite Icon => _icon;
     public bool IsBuyed => _isBuyed;
+    public GameObject WeaponPrefab => _weaponPrefab;
 
     public abstract void Shoot(Transform shootPoint);
 

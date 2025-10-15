@@ -51,6 +51,7 @@ MonoBehaviour:
   _isBuyed: 0
   Bullet: {fileID: 5465444841670568317, guid: b474dd90e7551a44faa482ee2dbc4470, type: 3}
   _delay: 0.3
+  _weaponPrefab: {fileID: 1963438350090080989}
 --- !u!212 &5837867678531955935
 SpriteRenderer:
   m_ObjectHideFlags: 0
